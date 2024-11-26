@@ -20,6 +20,7 @@ export default class RedirectButton extends Component {
                 <button onClick={this.toggleShouldRedirect}>
                     Go to HomePage
                 </button>
+                {/* && Operator => If this is true, do this */}
                 {this.state.shouldRedirect && <Navigate to={"/"} />}
             </>
         )
