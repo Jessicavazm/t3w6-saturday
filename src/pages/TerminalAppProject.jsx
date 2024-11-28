@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 
 export default function TerminalAppProject(){
+    // version number is fetched by useParams hook and called after
     let { versionNumber } = useParams();
 
     return(
@@ -13,6 +14,7 @@ export default function TerminalAppProject(){
                 <li>Feature 3</li>
                 <li>Feature 4</li>
             </ul>
+            {/** Conditional rendering */}
             {versionNumber && <p>Version Number: {versionNumber}</p>}
         </div>
     )
